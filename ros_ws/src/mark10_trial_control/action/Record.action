@@ -1,0 +1,8 @@
+#goal
+string file_name
+---
+#result
+float32[] data
+---
+#feedback
+bool status

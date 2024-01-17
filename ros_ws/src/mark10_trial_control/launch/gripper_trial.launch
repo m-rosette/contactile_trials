@@ -1,0 +1,9 @@
+<launch>
+        <arg name="node_start_delay" default="1.0" />  
+
+        <include file="$(find contactile_gripper)/launch/gripper_bringup.launch">
+        </include>
+
+        <node pkg="mark10_trial_control" name="record" type="record.py" output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+        <node pkg="mark10_trial_control" name="gripper_control" type="gripper_control.py" launch-prefix="gnome-terminal --" output="screen"/>
+</launch>

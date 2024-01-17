@@ -1,0 +1,14 @@
+test_data
+data
+data_01_05_24
+figures
+magnet_jig_cable_pull
+mark10_data
+mark10_data_01_05_24
+
+*.pyc
+
+ros_ws/build
+ros_ws/devel
+
+*.catkin_workspace
